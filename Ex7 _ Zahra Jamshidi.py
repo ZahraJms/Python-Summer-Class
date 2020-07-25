@@ -1,9 +1,7 @@
 def fib(n):
-    num1=0
-    num2=1
     if n==1:
-        return num1
+        return 0
     elif n==2:
-        return num2
+        return 1
     else:
         return fib(n-1)+fib(n-2)
