@@ -5,3 +5,8 @@ def fib(n):
         return 1
     else:
         return fib(n-1)+fib(n-2)
+def fiblist(n):
+    fiblist=[]
+    for i in range(1,n+1):
+        fiblist.append(fib(i))
+    return fiblist
