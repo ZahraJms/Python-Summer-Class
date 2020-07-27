@@ -68,6 +68,3 @@ class Time():
             return False
     def show(self):
         return Time(str(self.Hour), str(self.Minute), str(self.Second))
-t1=Time(4,50,20)
-t2=Time(18,50,20)
-print(t2-t1)
