@@ -1,0 +1,20 @@
+import numpy as np
+import matplotlib.pyplot as plt
+plt.figure()
+x=theta=np.linspace(-1,1,500)
+plt.xlabel("X")
+plt.ylabel("Y")
+plt.plot(x,np.exp(-x/10)  *np.sin(np.pi*x))
+plt.plot(x,x * np.exp(-x/3))
+plt.legend(["F(x)","G(x)"])
+plt.figure()
+theta=np.linspace(-1,1,500)
+plt.xlabel("X")
+plt.ylabel("Y")
+for i in [1,0.8,1.2]:
+    r=i+np.cos(2*np.pi*theta)
+    x=r*np.cos(2*np.pi*theta)
+    y=r*np.sin(2*np.pi*theta)
+    plt.plot(x,y)
+plt.legend(["r = 1","r = 0.8","r = 1.2"])
+plt.show()
