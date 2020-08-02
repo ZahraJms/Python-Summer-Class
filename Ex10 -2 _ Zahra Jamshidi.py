@@ -20,6 +20,6 @@ else:
     print("Not Magic")
 M=np.random.rand(10,10)
 MUL=M[0:5,0:5]
-MUR=M[0:5,6:10]
-MLL=M[6:10,0:5]
-MLR=M[6:10,6:10]
+MUR=M[0:5,5:10]
+MLL=M[5:10,0:5]
+MLR=M[5:10,5:10]
